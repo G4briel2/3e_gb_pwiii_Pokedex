@@ -1,7 +1,25 @@
 {
-  "dependencies": {
-    "-": "^0.0.1",
-    "@angular/cli": "^15.2.4",
-    "g": "^2.0.1"
-  }
+  "name": "3e_gb_pwii_pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ngi": "npm i -g @angular/cli",
+    "gitconfig": "git config --local user.name \"Jonas Eduardo de Almeida Pinheiro\" && git config --local user.email \"jonas123.aluno@gmail.com\"",
+    "gitconfig2": "git config --local user.name \"Gabriel de Almeida Martins\" && git config --local user.email \"gabriel_almeida_m@outlook.com\"",
+    "all": "npm run gitconfig && npm run ngi",
+    "all2": "npm run gitconfig2 && npm run ngi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/jonas123.aluno/3e_gb_pwii_pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/jonas123.aluno/3e_gb_pwii_pokedex/issues"
+  },
+  "homepage": "https://gitlab.com/jonas123.aluno/3e_gb_pwii_pokedex#readme"
 }
