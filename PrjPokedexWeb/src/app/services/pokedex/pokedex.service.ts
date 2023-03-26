@@ -13,6 +13,6 @@ export class PokedexService {
   ) { }
 
   buscarApiPokedex(): Observable<any>{
-    return this.http.get<any>(`${URL}`)
+    return this.http.get<any>(`${this.URL}pokemon`)
   }
 }
