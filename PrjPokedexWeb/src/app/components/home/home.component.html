@@ -1,42 +1,63 @@
-<button (click)="buscarPokemonPorGeracao(1)">Generation 1</button>
-<button (click)="buscarPokemonPorGeracao(2)">Generation 2</button>
-<button (click)="buscarPokemonPorGeracao(3)">Generation 3</button>
-<button (click)="buscarPokemonPorGeracao(4)">Generation 4</button>
-<button (click)="buscarPokemonPorGeracao(5)">Generation 5</button>
-<button (click)="buscarPokemonPorGeracao(6)">Generation 6</button>
-<button (click)="buscarPokemonPorGeracao(7)">Generation 7</button>
-<button (click)="buscarPokemonPorGeracao(8)">Generation 8</button>
-<button (click)="buscarPokemonPorGeracao(9)">Generation 9</button>
-<div *ngFor="let pokemon of pokemons">
-    <li>{{ pokemon.name }}</li>
-    <img [src]="pokemon.sprites.front_default">
-    <img [src]="pokemon.sprites.front_shiny">
-</div> 
+<main>
+    <header #home>
+        <a href="#">
+            <img class="logo" src="../../../assets/Logo/v6.png" alt="">
+        </a>
+        <div class="btns">
+            <button (click)=scrollToElement(home)>Home</button>
+            <button (click)="scrollToElement(desc)">Explorar</button>
+        </div>
+    </header>
+    
+    <section>
+        <div id="text">Explore a Pokédex e conheça todos os detalhes do seu Pokémon preferido</div>
+        <img src="../assets/Home/Nuvens.png" class="nuvem1" #nuvem1>
+        <img src="../assets/Home/Nuvens.png" class="nuvem2" #nuvem2>
+        <img src="../assets/Home/Sol.png" class="sol" #sol>
+        <img src="../assets/Home/Pidgey.png" class="pidgeot" #pidgeot>
+        
+        <img src="../assets/Home/MontanhasFrente.png" class="montanhasFrente">
+        
+        <img src="../assets/Home/CamposFundo.png" class="camposFundo" #camposFundo>
+        <img src="../assets/Home/CamposFrente.png" class="camposFrente" #camposFrente>
+        
+        <img src="../assets/Home/MontanhasFundo.png" class="montanhasFundo" #montanhasFundo>
 
-<button (click)="buscarPokemonPorTipo(1)">normal</button>
-<button (click)="buscarPokemonPorTipo(2)">fighting</button>
-<button (click)="buscarPokemonPorTipo(3)">flying</button>
-<button (click)="buscarPokemonPorTipo(4)">poison</button>
-<button (click)="buscarPokemonPorTipo(5)">ground</button>
-<button (click)="buscarPokemonPorTipo(6)">rock</button>
-<button (click)="buscarPokemonPorTipo(7)">bug</button>
-<button (click)="buscarPokemonPorTipo(8)">ghost</button>
-<button (click)="buscarPokemonPorTipo(9)">steel</button>
-<button (click)="buscarPokemonPorTipo(10)">fire</button>
-<button (click)="buscarPokemonPorTipo(11)">water</button>
-<button (click)="buscarPokemonPorTipo(12)">grass</button>
-<button (click)="buscarPokemonPorTipo(13)">electric</button>
-<button (click)="buscarPokemonPorTipo(14)">psychic</button>
-<button (click)="buscarPokemonPorTipo(15)">ice</button>
-<button (click)="buscarPokemonPorTipo(16)">dragon</button>
-<button (click)="buscarPokemonPorTipo(17)">dark</button>
-<button (click)="buscarPokemonPorTipo(18)">fairy</button>
+        <img src="../assets/Home/Ceu.png">
 
-<div *ngFor="let tipo of tipos">
-    <li>{{ tipo.name }}</li>
-    <img [src]="tipo.sprites.front_default">
-    <img [src]="tipo.sprites.front_shiny">
-</div>
-
-
-
+        <button id="btn" (click)="scrollToElement(desc)">Comece a explorar</button>
+        
+    </section>
+    <div class="desc" #desc>
+        <h2>Gerações</h2>
+        <div class="cards">
+            <button class="card">
+                <h3 class="titulo">Geração 1</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 2</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 3</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 4</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 5</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 6</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 7</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 8</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 9</h3>
+            </button>
+        </div>
+    </div>
+</main>
