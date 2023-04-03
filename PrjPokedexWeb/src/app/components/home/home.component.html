@@ -1,1 +1,63 @@
-<p>home works!</p>
+<main>
+    <header #home>
+        <a href="#">
+            <img class="logo" src="../../../assets/Logo/v6.png" alt="">
+        </a>
+        <div class="btns">
+            <button (click)=scrollToElement(home)>Home</button>
+            <button (click)="scrollToElement(desc)">Explorar</button>
+        </div>
+    </header>
+    
+    <section>
+        <div id="text">Explore a Pokédex e conheça todos os detalhes do seu Pokémon preferido</div>
+        <img src="../assets/Home/Nuvens.png" class="nuvem1" #nuvem1>
+        <img src="../assets/Home/Nuvens.png" class="nuvem2" #nuvem2>
+        <img src="../assets/Home/Sol.png" class="sol" #sol>
+        <img src="../assets/Home/Pidgey.png" class="pidgeot" #pidgeot>
+        
+        <img src="../assets/Home/MontanhasFrente.png" class="montanhasFrente">
+        
+        <img src="../assets/Home/CamposFundo.png" class="camposFundo" #camposFundo>
+        <img src="../assets/Home/CamposFrente.png" class="camposFrente" #camposFrente>
+        
+        <img src="../assets/Home/MontanhasFundo.png" class="montanhasFundo" #montanhasFundo>
+
+        <img src="../assets/Home/Ceu.png">
+
+        <button id="btn" (click)="scrollToElement(desc)">Comece a explorar</button>
+        
+    </section>
+    <div class="desc" #desc>
+        <h2>Gerações</h2>
+        <div class="cards">
+            <button class="card">
+                <h3 class="titulo">Geração 1</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 2</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 3</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 4</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 5</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 6</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 7</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 8</h3>
+            </button>
+            <button class="card">
+                <h3 class="titulo">Geração 9</h3>
+            </button>
+        </div>
+    </div>
+</main>>
