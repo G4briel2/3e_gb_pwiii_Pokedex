@@ -1,1 +1,42 @@
-<p>home works!</p>
+<button (click)="buscarPokemonPorGeracao(1)">Generation 1</button>
+<button (click)="buscarPokemonPorGeracao(2)">Generation 2</button>
+<button (click)="buscarPokemonPorGeracao(3)">Generation 3</button>
+<button (click)="buscarPokemonPorGeracao(4)">Generation 4</button>
+<button (click)="buscarPokemonPorGeracao(5)">Generation 5</button>
+<button (click)="buscarPokemonPorGeracao(6)">Generation 6</button>
+<button (click)="buscarPokemonPorGeracao(7)">Generation 7</button>
+<button (click)="buscarPokemonPorGeracao(8)">Generation 8</button>
+<button (click)="buscarPokemonPorGeracao(9)">Generation 9</button>
+<div *ngFor="let pokemon of pokemons">
+    <li>{{ pokemon.name }}</li>
+    <img [src]="pokemon.sprites.front_default">
+    <img [src]="pokemon.sprites.front_shiny">
+</div> 
+
+<button (click)="buscarPokemonPorTipo(1)">normal</button>
+<button (click)="buscarPokemonPorTipo(2)">fighting</button>
+<button (click)="buscarPokemonPorTipo(3)">flying</button>
+<button (click)="buscarPokemonPorTipo(4)">poison</button>
+<button (click)="buscarPokemonPorTipo(5)">ground</button>
+<button (click)="buscarPokemonPorTipo(6)">rock</button>
+<button (click)="buscarPokemonPorTipo(7)">bug</button>
+<button (click)="buscarPokemonPorTipo(8)">ghost</button>
+<button (click)="buscarPokemonPorTipo(9)">steel</button>
+<button (click)="buscarPokemonPorTipo(10)">fire</button>
+<button (click)="buscarPokemonPorTipo(11)">water</button>
+<button (click)="buscarPokemonPorTipo(12)">grass</button>
+<button (click)="buscarPokemonPorTipo(13)">electric</button>
+<button (click)="buscarPokemonPorTipo(14)">psychic</button>
+<button (click)="buscarPokemonPorTipo(15)">ice</button>
+<button (click)="buscarPokemonPorTipo(16)">dragon</button>
+<button (click)="buscarPokemonPorTipo(17)">dark</button>
+<button (click)="buscarPokemonPorTipo(18)">fairy</button>
+
+<div *ngFor="let tipo of tipos">
+    <li>{{ tipo.name }}</li>
+    <img [src]="tipo.sprites.front_default">
+    <img [src]="tipo.sprites.front_shiny">
+</div>
+
+
+
