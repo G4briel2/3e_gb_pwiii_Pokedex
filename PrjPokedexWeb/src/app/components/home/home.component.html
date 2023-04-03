@@ -31,33 +31,61 @@
     <div class="desc" #desc>
         <h2>Gerações</h2>
         <div class="cards">
-            <button class="card">
+            <button class="card" (click)="buscarPokemonPorGeracao(1)">
                 <h3 class="titulo">Geração 1</h3>
             </button>
-            <button class="card">
+            <button class="card" (click)="buscarPokemonPorGeracao(2)">
                 <h3 class="titulo">Geração 2</h3>
             </button>
-            <button class="card">
+            <button class="card" (click)="buscarPokemonPorGeracao(3)">
                 <h3 class="titulo">Geração 3</h3>
             </button>
-            <button class="card">
-                <h3 class="titulo">Geração 4</h3>
+            <button class="card" (click)="buscarPokemonPorGeracao(4)">
+                <h3 class="titulo" >Geração 4</h3>
             </button>
-            <button class="card">
+            <button class="card" (click)="buscarPokemonPorGeracao(5)">
                 <h3 class="titulo">Geração 5</h3>
             </button>
-            <button class="card">
+            <button class="card" (click)="buscarPokemonPorGeracao(6)">
                 <h3 class="titulo">Geração 6</h3>
             </button>
-            <button class="card">
+            <button class="card" (click)="buscarPokemonPorGeracao(7)">
                 <h3 class="titulo">Geração 7</h3>
             </button>
-            <button class="card">
+            <button class="card" (click)="buscarPokemonPorGeracao(8)">
                 <h3 class="titulo">Geração 8</h3>
             </button>
-            <button class="card">
+            <button class="card" (click)="buscarPokemonPorGeracao(9)">
                 <h3 class="titulo">Geração 9</h3>
             </button>
         </div>
     </div>
+    <div class="pokemons">
+        <div class="pokemon" *ngFor="let pokemon of pokemons">
+            <div class="pokeCard">
+                <div class="top">
+                    {{ pokemon.name }}
+                </div>
+                <div class="middle">
+                    <img [src]="pokemon.sprites.front_default">
+                </div>
+                <div class="bottom">
+                    Dados Tipo etc
+                </div>
+            </div>
+
+            <div class="pokeCard">
+                <div class="top">
+                    Shiny {{ pokemon.name }}
+                </div>
+                <div class="middle">
+                    <img [src]="pokemon.sprites.front_shiny">
+                </div>
+                <div class="bottom">
+                    Dados Tipo etc
+                </div>
+            </div>
+        </div>
+        
+    </div>    
 </main>

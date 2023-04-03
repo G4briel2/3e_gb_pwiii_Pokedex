@@ -40,9 +40,10 @@ export class HomeComponent {
   scrollToElement($element:any): void {
     $element.scrollIntoView({behavior: "smooth"});
   }
-}
 
-export class HomeComponent{
+  //^ Css
+  //v Lógica 
+
   pokemons: any[] = []
   tipos: any[] = []
 
