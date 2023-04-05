@@ -3,7 +3,6 @@
     font-size: 1.6rem;
     min-height: 100vh;
     overflow-x: hidden;
-  
     background-color: #3279ca;
   }
   
@@ -30,13 +29,14 @@
   }
   
   header .btns button{
-  background-color: transparent;
-  border: none;
-  color: white;
-  padding: 0.6rem 1.5rem;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.6rem;
+    font-family: 'Poppins';
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6rem;
   }
 
   header .btns button:hover{
@@ -80,8 +80,8 @@
     transform: translateX(-125rem);
   }
 
-  section .pidgeot{
-  z-index:11;
+  section .pidgeotto{
+  z-index: 11;
   transform: translateX(50rem);
   }
   
@@ -100,13 +100,42 @@
   section .camposFrente{
     z-index: 7;
   }
+  
+  section .moinhoHelice {
+    margin: 54% 0 0 64.2%;
+    height: 7%;
+    width: auto;
+    animation: catavento 6s infinite linear;
+    transform-origin: center;
+
+    z-index: 6;
+  }
+  
+  @keyframes catavento {
+    0% {
+  
+      transform: rotate(0deg);
+    }
+    100% {
+  
+      transform: rotate(360deg);
+    }
+  }
 
   section .camposFundo{
+    z-index: 5;
+  }
+
+  section .montanhaFundoC1{
+    z-index: 4;
+  }
+
+  section .montanhaFundoC2{
     z-index: 3;
   }
 
-  section .montanhasFundo{
-  z-index: 2;
+  section .montanhaFundoC3{
+    z-index: 2;
   }
   
   #text{
@@ -129,6 +158,7 @@
     border-radius: 99rem;
     background: #fff;
     color: #355ee7;
+    font-family: 'Poppins';
     font-size: 1.6em;
     z-index: 11;
     transform: translateY(10rem);
@@ -162,20 +192,18 @@
   
   .card {
     border: none;
-    background-image: url(../../../assets/Home/Ceu.png);
+    background-image: url(../../../assets/Home/Card.png);
     background-size: cover;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     height: 24rem;
     width: 16rem;
     border-radius: 1rem;
-    box-shadow: -1rem 0 3rem #2821638a;
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
-    font-weight: 100;
   }
   
   .card:not(:first-child) {
@@ -193,10 +221,11 @@
     transition: 0.4s ease-out;
   }
 
-  .titulo{
+  .geracao{
+    color: #000;
     text-align: center;
-    font-size: 1.6rem;
-    font-weight: 100;
+    font-size: 2rem;
+    font-family: 'CoolCrayon';
   }
 
   .pokemons{

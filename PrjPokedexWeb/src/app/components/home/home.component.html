@@ -11,19 +11,22 @@
     
     <section>
         <div id="text">Explore a Pokédex e conheça todos os detalhes do seu Pokémon preferido</div>
-        <img src="../assets/Home/Nuvens.png" class="nuvem1" #nuvem1>
-        <img src="../assets/Home/Nuvens.png" class="nuvem2" #nuvem2>
-        <img src="../assets/Home/Sol.png" class="sol" #sol>
-        <img src="../assets/Home/Pidgey.png" class="pidgeot" #pidgeot>
+        <img src="../../../assets/Home/Nuvens.png" class="nuvem1" #nuvem1>
+        <img src="../../../assets/Home/Nuvens.png" class="nuvem2" #nuvem2>
+        <img src="../../../assets/Home/Sol.png" class="sol" #sol>
+        <img src="../../../assets/Home/Pidgeotto.png" class="pidgeotto" #pidgeotto>
         
-        <img src="../assets/Home/MontanhasFrente.png" class="montanhasFrente">
+        <img src="../../../assets/Home/MontanhasFrente.png" class="montanhasFrente">
         
-        <img src="../assets/Home/CamposFundo.png" class="camposFundo" #camposFundo>
-        <img src="../assets/Home/CamposFrente.png" class="camposFrente" #camposFrente>
+        <img src="../../../assets/Home/MoinhoHelice.png" class="moinhoHelice" #moinhoHelice>
+        <img src="../../../assets/Home/CamposFundo.png" class="camposFundo" #camposFundo>
+        <img src="../../../assets/Home/CamposFrente.png" class="camposFrente" #camposFrente>
         
-        <img src="../assets/Home/MontanhasFundo.png" class="montanhasFundo" #montanhasFundo>
+        <img src="../../../assets/Home/MontanhaFundoCamada1.png" class="montanhaFundoC1" #montanhaFundoC1>
+        <img src="../../../assets/Home/MontanhaFundoCamada2.png" class="montanhaFundoC2" #montanhaFundoC2>
+        <img src="../../../assets/Home/MontanhaFundoCamada3.png" class="montanhaFundoC3" #montanhaFundoC3>
 
-        <img src="../assets/Home/Ceu.png">
+        <img src="../../../assets/Home/Ceu.png">
 
         <button id="btn" (click)="scrollToElement(desc)">Comece a explorar</button>
         
@@ -32,31 +35,31 @@
         <h2>Gerações</h2>
         <div class="cards">
             <button class="card" (click)="buscarPokemonPorGeracao(1)">
-                <h3 class="titulo">Geração 1</h3>
+                <h3 class="geracao">Geração 1</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(2)">
-                <h3 class="titulo">Geração 2</h3>
+                <h3 class="geracao">Geração 2</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(3)">
-                <h3 class="titulo">Geração 3</h3>
+                <h3 class="geracao">Geração 3</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(4)">
-                <h3 class="titulo" >Geração 4</h3>
+                <h3 class="geracao" >Geração 4</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(5)">
-                <h3 class="titulo">Geração 5</h3>
+                <h3 class="geracao">Geração 5</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(6)">
-                <h3 class="titulo">Geração 6</h3>
+                <h3 class="geracao">Geração 6</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(7)">
-                <h3 class="titulo">Geração 7</h3>
+                <h3 class="geracao">Geração 7</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(8)">
-                <h3 class="titulo">Geração 8</h3>
+                <h3 class="geracao">Geração 8</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(9)">
-                <h3 class="titulo">Geração 9</h3>
+                <h3 class="geracao">Geração 9</h3>
             </button>
         </div>
     </div>
@@ -70,19 +73,7 @@
                     <img [src]="pokemon.sprites.front_default">
                 </div>
                 <div class="bottom">
-                    Dados Tipo etc
-                </div>
-            </div>
-
-            <div class="pokeCard">
-                <div class="top">
-                    Shiny {{ pokemon.name }}
-                </div>
-                <div class="middle">
-                    <img [src]="pokemon.sprites.front_shiny">
-                </div>
-                <div class="bottom">
-                    Dados Tipo etc
+                    
                 </div>
             </div>
         </div>
