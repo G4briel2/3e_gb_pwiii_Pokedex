@@ -97,4 +97,8 @@ export class HomeComponent {
       })
     })
   }
+
+  getTypeNames(types: any[] = []) {
+    return types.map(type => type.type.name).join(', ');
+  }
 }

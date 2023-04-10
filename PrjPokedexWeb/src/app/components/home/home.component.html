@@ -35,31 +35,31 @@
         <h2>Gerações</h2>
         <div class="cards">
             <button class="card" (click)="buscarPokemonPorGeracao(1)">
-                <h3 class="geracao">Geração 1</h3>
+                <h3 class="geracao">Geracao 1</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(2)">
-                <h3 class="geracao">Geração 2</h3>
+                <h3 class="geracao">Geracao 2</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(3)">
-                <h3 class="geracao">Geração 3</h3>
+                <h3 class="geracao">Geracao 3</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(4)">
-                <h3 class="geracao" >Geração 4</h3>
+                <h3 class="geracao">Geracao 4</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(5)">
-                <h3 class="geracao">Geração 5</h3>
+                <h3 class="geracao">Geracao 5</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(6)">
-                <h3 class="geracao">Geração 6</h3>
+                <h3 class="geracao">Geracao 6</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(7)">
-                <h3 class="geracao">Geração 7</h3>
+                <h3 class="geracao">Geracao 7</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(8)">
-                <h3 class="geracao">Geração 8</h3>
+                <h3 class="geracao">Geracao 8</h3>
             </button>
             <button class="card" (click)="buscarPokemonPorGeracao(9)">
-                <h3 class="geracao">Geração 9</h3>
+                <h3 class="geracao">Geracao 9</h3>
             </button>
         </div>
     </div>
@@ -67,13 +67,13 @@
         <div class="pokemon" *ngFor="let pokemon of pokemons">
             <div class="pokeCard">
                 <div class="top">
-                    {{ pokemon.name }}
+                    {{ pokemon.name | titlecase }}
                 </div>
                 <div class="middle">
                     <img [src]="pokemon.sprites.front_default">
                 </div>
                 <div class="bottom">
-                    
+                    {{ getTypeNames(pokemon.types) | titlecase }}
                 </div>
             </div>
         </div>
