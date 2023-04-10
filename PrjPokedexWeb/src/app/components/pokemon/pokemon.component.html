@@ -1,1 +1,163 @@
-<p>pokemon works!</p>
+<main>
+<header>
+    <a routerLink="/home">
+        <img src="../../../assets/Logo/v6Black.png" class="logo" />
+    </a>
+</header>
+<div class="content">
+    <div class="pokeSprite box">
+      <div class="top">Bulbasaur</div>
+      <div class="middle">
+        <img src="../../../assets/Statistics/pokemon.png"/>
+      </div>
+      <div class="bottom">Water, Poison</div>
+    </div>
+    <div class="hpChart box">
+      <div class="top"><h3>Pontos de vida (HP)</h3></div>
+      <div class="middle">
+        <h1>265</h1>
+        <svg viewBox="0 0 232 232" style="--percentage: 542">
+          <circle cx="50%" cy="50%" r="98.8" opacity="0.3" stroke="#d4d4eb" />
+          <circle
+            cx="50%"
+            cy="50%"
+            r="98.8"
+            stroke="url(#paint0_linear_201_85)"
+          />
+
+          <defs>
+            <linearGradient
+              id="paint0_linear_201_85"
+              x1="-9"
+              y1="82"
+              x2="145"
+              y2="178"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#1e6b28" />
+              <stop offset="1" stop-color="#66af82" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="bottom">
+        <div class="item">
+          <span>Max HP</span>
+          <span>700</span>
+        </div>
+        <div class="item">
+          <span
+            style="
+              --bg-color: linear-gradient(
+                240deg,
+                #66af82 15.98%,
+                #1e6b28 82.85%
+              );
+            "
+            >HP</span
+          >
+          <span>265</span>
+        </div>
+      </div>
+    </div>
+    <div class="cpChart box">
+      <div class="top"><h3>Pontos de combate (CP)</h3></div>
+      <div class="middle">
+        <h1>352</h1>
+        <svg viewBox="0 0 232 232" style="--percentage: 352">
+          <circle cx="50%" cy="50%" r="98.8" opacity="0.5" stroke="#d4d4eb9a" />
+          <circle
+            cx="50%"
+            cy="50%"
+            r="98.8"
+            stroke="url(#paint2_linear_201_85)"
+          />
+
+          <defs>
+            <linearGradient
+              id="paint2_linear_201_85"
+              x1="-9"
+              y1="82"
+              x2="145"
+              y2="178"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#1b28e5" />
+              <stop offset="1" stop-color="#6d83fc" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="bottom">
+        <div class="item">
+          <span>Max CP</span>
+          <span>700</span>
+        </div>
+        <div class="item">
+          <span
+            style="
+              --bg-color: linear-gradient(
+                240deg,
+                #6d83fc 15.98%,
+                #1b28e5 82.85%
+              );
+            "
+            >CP</span
+          >
+          <span>352</span>
+        </div>
+      </div>
+    </div>
+    <div class="pokeStats box">
+      <div class="top"><h2>Estatisticas</h2></div>
+      <section>
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="compare">
+          <span>0</span>
+          <span>100</span>
+          <span>200</span>
+          <span>300</span>
+          <span>400</span>
+          <span>500</span>
+          <span>600</span>
+          <span>700</span>
+          <span>800</span>
+          <span>900</span>
+          <span>1000</span>
+        </div>
+
+        <div class="graph">
+          <div class="bars">
+            <div class="graph-bar">
+              <div class="bar" style="--height: 100%"></div>
+              <span>Ataque</span>
+            </div>
+            <div class="graph-bar">
+              <div class="bar" style="--height: 11.5rem"></div>
+              <span>Defesa</span>
+            </div>
+            <div class="graph-bar">
+              <div class="bar" style="--height: 7.6rem"></div>
+              <span>Atq Especial</span>
+            </div>
+            <div class="graph-bar">
+              <div class="bar" style="--height: 100%"></div>
+              <span>Def Especial</span>
+            </div>
+            <div class="graph-bar">
+              <div class="bar" style="--height: 12.9rem"></div>
+              <span>Velocidade</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+</div>
+</main>

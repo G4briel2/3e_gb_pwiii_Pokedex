@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'Crayon';
+    src: url(../../../assets/Fonts/Chalk/Chalktastic-x1nR.ttf);
+}
+
+main {
+  font-family: "Crayon";
+
+  background-image: url(../../../assets/Statistics/woodenBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: 1.4rem;
+  overflow-x: hidden;
+}
+
+/* ^ Config
+   v Grid ____________________*/
+
+.content {
+  display: grid;
+  grid-template-columns: 40rem 40rem 30rem;
+  grid-template-rows: 30rem 30rem 35rem;
+
+  gap: 2.5rem;
+
+  margin: auto;
+
+  place-content: center;
+  padding-bottom: 2.5rem;
+}
+
+.pokeSprite {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.hpChart {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.cpChart {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.pokeStats {
+  grid-column: 1/4;
+  grid-auto-rows: 3/4;
+}
+
+/* ^ Grid ____________________ */
+
+header {
+  margin: 2rem;
+  display: flex;
+  place-content: center;
+}
+
+header .logo {
+  height: 8rem;
+}
+
+.box {
+  border-radius: 1rem;
+}
+
+.pokeSprite {
+  font-family: "Crayon";
+
+  background-image: url(../../../assets/Statistics/paper.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow(1rem 2rem 5px #64656b6e);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  text-align: center;
+}
+
+.pokeSprite .top {
+  font-size: 4rem;
+
+  transform: translateY(2rem) rotate(-3deg);
+  padding: 2rem;
+}
+
+.pokeSprite .middle {
+  transform: translateY(-3rem) rotate(-4deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3.2rem;
+
+  background-image: url(../../../assets/Statistics/imagem.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  width: 35rem;
+}
+
+.pokeSprite img {
+  width: 25rem;
+  height: 25rem;
+  transform: translateY(-3rem);
+}
+
+.pokeSprite .bottom {
+  font-size: 2rem;
+  transform: rotate(8deg);
+}
+
+.pokeSprite .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hpChart {
+  background-image: url(../../../assets/Statistics/Hp.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(1rem 1rem 5px #64656b6e);
+
+  font-family: "Crayon";
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  
+  transform: rotate(-3deg);
+}
+
+h3 {
+  font-weight: 100;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle h1 {
+  position: absolute;
+}
+
+.cpChart {
+  background-image: url(../../../assets/Statistics/Cp.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(1rem 1rem 5px #64656b6e);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  transform-origin: top right;
+}
+
+.bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.bottom .item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bottom .item span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bottom .item span {
+  --bg-color: #d4d4eb9a;
+}
+
+.bottom .item span:nth-child(1)::before {
+  content: "";
+  width: 4rem;
+  height: 2rem;
+  display: block;
+  background: var(--bg-color);
+  border-radius: 99rem;
+}
+
+.pokeStats {
+  background-image: url(../../../assets/Statistics/Stats.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(1rem 1rem 5px #64656b6e);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pokeStats section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.pokeStats section .compare {
+  font-size: 11.8px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  position: absolute;
+  transform: translateX(-40rem) translateY(-1rem);
+  z-index: 1;
+}
+
+.pokeStats .lines {
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+  gap: 3.6rem;
+  width: 65%;
+  height: 100%;
+  
+}
+
+.lines .line {
+  height: 0.3rem;
+  width: 100%;
+  background: #b2b2d5;
+  border-radius: 99.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pokeStats .graph {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  height: 100%;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3.5rem;
+  height: 100%;
+}
+
+.graph-bar {
+  display: grid;
+  grid-template-rows: 15.9rem 1.6rem;
+  justify-items: center;
+  align-content: space-evenly;
+  width: 10rem;
+  height: 100%;
+}
+
+.bar {
+  width: 3.5rem;
+  border-radius: 0.5rem;
+
+  height: var(--height);
+  align-self: end;
+
+  animation: up 2s;
+}
+
+.graph-bar:nth-child(1) .bar {
+  background: linear-gradient(180deg, #fd6055 0%, #be153f 100%);
+}
+
+.graph-bar:nth-child(2) .bar {
+  background: linear-gradient(180deg, #4897ff 0%, #312b88 100%);
+}
+
+.graph-bar:nth-child(3) .bar {
+  background: linear-gradient(180deg, #fdc855 0%, #ee5c18 100%);
+}
+
+.graph-bar:nth-child(4) .bar {
+  background: linear-gradient(180deg, #b648ff 0%, #491a86 100%);
+}
+
+.graph-bar:nth-child(5) .bar {
+  background: linear-gradient(180deg, #c4d2e4 0%, #7a83ac 100%);
+}
+
+@keyframes up {
+  0% {
+    height: 0;
+  }
+}
+
+/*v Donut Char*/
+svg {
+  --percentage: 0;
+  width: 18rem;
+  height: 18rem;
+  transform: rotate(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 620;
+  stroke-dashoffset: 620;
+  stroke-width: 35px;
+  fill: none;
+}
+
+svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+}
+
+svg circle:nth-child(2) {
+  stroke-dashoffset: calc(618 - (618 * var(--percentage)) / 700);
+  stroke-linecap: round;
+
+  animation: progress 2s ease-in-out;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 618;
+    stroke-dashoffset: 618;
+  }
+}
