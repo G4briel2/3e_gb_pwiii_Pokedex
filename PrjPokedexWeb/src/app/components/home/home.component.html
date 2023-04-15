@@ -65,7 +65,7 @@
     </div>
     <div class="pokemons">
         <div class="pokemon" *ngFor="let pokemon of pokemons">
-            <div class="pokeCard">
+            <a class="pokeCard"[routerLink] ="['/pokemon', pokemon.id]">
                 <div class="top">
                     {{ pokemon.name | titlecase }}
                 </div>
@@ -75,7 +75,7 @@
                 <div class="bottom">
                     {{ getTypeNames(pokemon.types) | titlecase }}
                 </div>
-            </div>
+            </a>
         </div>
         
     </div>    

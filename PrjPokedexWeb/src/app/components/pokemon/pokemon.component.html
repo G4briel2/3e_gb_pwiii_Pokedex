@@ -6,11 +6,11 @@
 </header>
 <div class="content">
     <div class="pokeSprite box">
-      <div class="top">Bulbasaur</div>
+      <div class="top">{{pokemon.name | titlecase}}</div>
       <div class="middle">
-        <img src="../../../assets/Statistics/pokemon.png"/>
+        <img [src]="pokemon.sprites.front_default">
       </div>
-      <div class="bottom">Water, Poison</div>
+      <div class="bottom">{{ getTypeNames(pokemon.types) | titlecase }}</div>
     </div>
     <div class="hpChart box">
       <div class="top"><h3>Pontos de vida (HP)</h3></div>

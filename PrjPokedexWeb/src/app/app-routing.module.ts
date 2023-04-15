@@ -12,7 +12,7 @@ const routes: Routes = [
     loadChildren: () => import("./components/home/home.module").then(m => m.HomeModule)
   },
   {
-    path: "pokemon",
+    path: "pokemon/:id",
     loadChildren: () => import("./components/pokemon/pokemon.module").then(m => m.PokemonModule)
   }
 ];
