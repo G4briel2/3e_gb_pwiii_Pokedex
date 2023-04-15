@@ -40,7 +40,7 @@ main {
   grid-row: 1/2;
 }
 
-.cpChart {
+.velChart {
   grid-column: 3/4;
   grid-row: 2/3;
 }
@@ -141,6 +141,10 @@ header .logo {
   transform: rotate(-3deg);
 }
 
+.hpChart .top{
+  transform: translateY(1.5rem);
+}
+
 h3 {
   font-weight: 100;
 }
@@ -156,8 +160,8 @@ h3 {
   position: absolute;
 }
 
-.cpChart {
-  background-image: url(../../../assets/Statistics/Cp.png);
+.velChart {
+  background-image: url(../../../assets/Statistics/Vel.png);
   background-repeat: no-repeat;
   background-size: contain;
   filter: drop-shadow(1rem 1rem 5px #64656b6e);
@@ -189,11 +193,8 @@ h3 {
   gap: 0.4rem;
 }
 
-.bottom .item span {
-  --bg-color: #d4d4eb9a;
-}
 
-.bottom .item span:nth-child(1)::before {
+.bottom .item:nth-child(2) span:nth-child(1)::before {
   content: "";
   width: 4rem;
   height: 2rem;
@@ -228,20 +229,20 @@ h3 {
   flex-direction: column-reverse;
   align-items: flex-end;
   position: absolute;
-  transform: translateX(-40rem) translateY(-1rem);
+  transform: translateX(-38rem) translateY(-1rem);
   z-index: 1;
 }
 
 .pokeStats .lines {
-  margin-bottom: 6px;
+  margin-bottom: 7.3px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   position: absolute;
   z-index: 0;
-  gap: 3.6rem;
-  width: 65%;
+  gap: 3.68rem;
+  width: 60%;
   height: 100%;
   
 }
@@ -265,7 +266,7 @@ h3 {
 .bars {
   display: flex;
   align-items: flex-end;
-  gap: 3.5rem;
+  gap: 2rem;
   height: 100%;
 }
 
@@ -274,15 +275,15 @@ h3 {
   grid-template-rows: 15.9rem 1.6rem;
   justify-items: center;
   align-content: space-evenly;
-  width: 10rem;
+  width: 17.5rem;
   height: 100%;
 }
 
 .bar {
   width: 3.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
 
-  height: var(--height);
+  height: calc(((var(--height)) * 159px) / 250);
   align-self: end;
 
   animation: up 2s;
@@ -302,10 +303,6 @@ h3 {
 
 .graph-bar:nth-child(4) .bar {
   background: linear-gradient(180deg, #b648ff 0%, #491a86 100%);
-}
-
-.graph-bar:nth-child(5) .bar {
-  background: linear-gradient(180deg, #c4d2e4 0%, #7a83ac 100%);
 }
 
 @keyframes up {
@@ -333,11 +330,18 @@ svg circle:nth-child(1) {
   stroke-dashoffset: 0;
 }
 
-svg circle:nth-child(2) {
-  stroke-dashoffset: calc(618 - (618 * var(--percentage)) / 700);
+.hpChart svg circle:nth-child(2) {
+  stroke-dashoffset: calc(618 - (618 * var(--percentage)) / 255);
   stroke-linecap: round;
 
-  animation: progress 2s ease-in-out;
+  animation: progress 2s ease-out;
+}
+
+.velChart svg circle:nth-child(2) {
+  stroke-dashoffset: calc(618 - (618 * var(--percentage)) / 180);
+  stroke-linecap: round;
+
+  animation: progress 2s ease-out;
 }
 
 @keyframes progress {

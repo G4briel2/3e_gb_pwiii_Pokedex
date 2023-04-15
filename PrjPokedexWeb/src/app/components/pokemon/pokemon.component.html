@@ -8,16 +8,16 @@
     <div class="pokeSprite box">
       <div class="top">{{pokemon.name | titlecase}}</div>
       <div class="middle">
-        <img [src]="pokemon.sprites.front_default">
+        <img src="{{ spriteUrl }}{{ pokemon.id }}.png">
       </div>
       <div class="bottom">{{ getTypeNames(pokemon.types) | titlecase }}</div>
     </div>
     <div class="hpChart box">
       <div class="top"><h3>Pontos de vida (HP)</h3></div>
       <div class="middle">
-        <h1>265</h1>
-        <svg viewBox="0 0 232 232" style="--percentage: 542">
-          <circle cx="50%" cy="50%" r="98.8" opacity="0.3" stroke="#d4d4eb" />
+        <h1>{{hp}}</h1>
+        <svg viewBox="0 0 232 232" style="--percentage: {{hp}}">
+          <circle cx="50%" cy="50%" r="98.8" opacity="0.3" stroke="#fbbf40" />
           <circle
             cx="50%"
             cy="50%"
@@ -34,8 +34,8 @@
               y2="178"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#1e6b28" />
-              <stop offset="1" stop-color="#66af82" />
+              <stop stop-color="#0f0f13" />
+              <stop offset="1" stop-color="#464653" />
             </linearGradient>
           </defs>
         </svg>
@@ -43,29 +43,29 @@
       <div class="bottom">
         <div class="item">
           <span>Max HP</span>
-          <span>700</span>
+          <span>255</span>
         </div>
         <div class="item">
           <span
             style="
               --bg-color: linear-gradient(
                 240deg,
-                #66af82 15.98%,
-                #1e6b28 82.85%
+                #464653 15.98%,
+                #0f0f13 82.85%
               );
             "
             >HP</span
           >
-          <span>265</span>
+          <span>{{hp}}</span>
         </div>
       </div>
     </div>
-    <div class="cpChart box">
-      <div class="top"><h3>Pontos de combate (CP)</h3></div>
+    <div class="velChart box">
+      <div class="top"><h3>Velocidade</h3></div>
       <div class="middle">
-        <h1>352</h1>
-        <svg viewBox="0 0 232 232" style="--percentage: 352">
-          <circle cx="50%" cy="50%" r="98.8" opacity="0.5" stroke="#d4d4eb9a" />
+        <h1>{{vel}}</h1>
+        <svg viewBox="0 0 232 232" style="--percentage: {{vel}}">
+          <circle cx="50%" cy="50%" r="98.8" opacity="0.2" stroke="#fbbf40" />
           <circle
             cx="50%"
             cy="50%"
@@ -90,8 +90,8 @@
       </div>
       <div class="bottom">
         <div class="item">
-          <span>Max CP</span>
-          <span>700</span>
+          <span>Max Vel</span>
+          <span>180</span>
         </div>
         <div class="item">
           <span
@@ -102,9 +102,9 @@
                 #1b28e5 82.85%
               );
             "
-            >CP</span
+            >Vel</span
           >
-          <span>352</span>
+          <span>{{vel}}</span>
         </div>
       </div>
     </div>
@@ -120,40 +120,36 @@
         </div>
 
         <div class="compare">
-          <span>0</span>
-          <span>100</span>
-          <span>200</span>
-          <span>300</span>
-          <span>400</span>
-          <span>500</span>
-          <span>600</span>
-          <span>700</span>
-          <span>800</span>
-          <span>900</span>
-          <span>1000</span>
+          <span>0pt</span>
+          <span>25pt</span>
+          <span>50pt</span>
+          <span>75pt</span>
+          <span>100pt</span>
+          <span>125pt</span>
+          <span>150pt</span>
+          <span>175pt</span>
+          <span>200pt</span>
+          <span>225pt</span>
+          <span>250pt</span>
         </div>
 
         <div class="graph">
           <div class="bars">
             <div class="graph-bar">
-              <div class="bar" style="--height: 100%"></div>
-              <span>Ataque</span>
+              <div class="bar" style="--height: {{atk}}"></div>
+              <span>Ataque ({{atk}}pt)</span>
             </div>
             <div class="graph-bar">
-              <div class="bar" style="--height: 11.5rem"></div>
-              <span>Defesa</span>
+              <div class="bar" style="--height: {{def}}"></div>
+              <span>Defesa ({{def}}pt)</span>
             </div>
             <div class="graph-bar">
-              <div class="bar" style="--height: 7.6rem"></div>
-              <span>Atq Especial</span>
+              <div class="bar" style="--height: {{sAtk}}"></div>
+              <span>Atq Especial ({{sAtk}}pt)</span>
             </div>
             <div class="graph-bar">
-              <div class="bar" style="--height: 100%"></div>
-              <span>Def Especial</span>
-            </div>
-            <div class="graph-bar">
-              <div class="bar" style="--height: 12.9rem"></div>
-              <span>Velocidade</span>
+              <div class="bar" style="--height: {{sDef}}"></div>
+              <span>Def Especial ({{sDef}}pt)</span>
             </div>
           </div>
         </div>
