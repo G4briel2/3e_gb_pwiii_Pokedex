@@ -71,6 +71,9 @@ ng serve
 
 ## 📷 Preview
 
+Live demo by Vercel 🔼
+🔗 https://3e-gb-pwiii-pokedex.vercel.app/home
+
 <p>
   <img src="PrjPokedexWeb/src/assets/screenshots/localhost_4200_home.png" width="49%"/>
   <img src="PrjPokedexWeb/src/assets/screenshots/localhost_4200_pokemon_4.png" width="49%"/>
