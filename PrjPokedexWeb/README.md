@@ -1,27 +1,51 @@
-# PrjPokedexWeb
+# 🎮 Pokédex Angular - PokeAPI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Este projeto foi desenvolvido em **Angular** utilizando a **PokeAPI**, como parte da nossa formação técnica.  
+O objetivo do sistema é permitir que o usuário explore diferentes gerações de Pokémon de forma visual e interativa.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Sobre o Projeto
 
-## Code scaffolding
+A aplicação funciona como uma **Pokédex**, onde é possível:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Visualizar as **gerações de Pokémon**
+- Navegar pelos Pokémon de cada geração
+- Clicar em um **card** para ver informações detalhadas do Pokémon
 
-## Build
+Com uma temática inspirada em **desenhos feitos com giz**.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🚀 Tecnologias Utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular**
+- **TypeScript**
+- **HTML / CSS**
+- **PokeAPI** (API pública de Pokémon)
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🔍 Funcionalidades
 
-## Further help
+✅ Listagem de gerações  
+✅ Exibição de Pokémon por geração  
+✅ Página com informações detalhadas do Pokémon  
+✅ Interface temática e estilizada  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## 🌐 API Utilizada
+
+Este projeto consome dados da API pública:
+
+🔗 https://pokeapi.co/
+
+---
+
+## 📷 Preview
+
+<p>
+  <img src="src/assets/screenshots/localhost_4200_home.png" width="49%"/>
+  <img src="src/assets/screenshots/localhost_4200_pokemon_4.png" width="49%"/>
+</p>
