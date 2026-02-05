@@ -78,3 +78,6 @@ Live demo by Vercel 🔼
   <img src="PrjPokedexWeb/src/assets/screenshots/localhost_4200_home.png" width="49%"/>
   <img src="PrjPokedexWeb/src/assets/screenshots/localhost_4200_pokemon_4.png" width="49%"/>
 </p>
+
+## 👤 Autores
+Desenvolvido por **Gabriel Martins** e **Jonas Eduardo** como parte do projeto de Programação WEB na Etec Itapeva
